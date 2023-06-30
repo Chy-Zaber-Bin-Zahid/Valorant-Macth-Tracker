@@ -1,9 +1,76 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html,
+body {
   font-size: 62.5%;
+  position: relative;
+  height: 100%;
+  font-family: serif;
+}
+
+.valo-main {
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+.valo-back {
+  background-image: url(/image/valorant\ back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.valo-title-d {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #ffffffc9;
+  color: #f94555;
+}
+
+.valo-git {
+  width: 5rem;
+}
+
+.valo-form {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.valo-input {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.btn-in {
+  background-color: #f94555;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.btn-in:hover {
+  cursor: pointer;
+  color: #f94555;
+  background-color: #fff;
+  border: 2px solid #f94555;
 }
