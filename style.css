@@ -43,12 +43,22 @@ body {
   color: #f94555;
 }
 
+.valo-a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 1rem;
+  font-size: 2.4rem;
+}
+
 .valo-git {
   width: 5rem;
 }
 
 .valo-form {
-  padding: 1rem;
+  padding: 2rem 1rem 1.3rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,23 +97,78 @@ body {
 }
 
 .valo-show{
-  height: calc(100% - 137.5px);
+  height: calc(100% - 150.5px);
   overflow: auto;
   font-size: 2rem;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: .5rem 2rem 1rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   align-items: start;
 }
 
 /* For WebKit-based browsers */
-/* .valo-show::-webkit-scrollbar {
+.valo-show::-webkit-scrollbar {
   display: none;
-} */
+}
 
-.valo-created-div{
+.valo-match{
+  font-size: 1rem;
+  background-color: white;
+  padding: 5rem 1rem 1rem 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: start;
+  gap: 1rem;
+  word-break: break-all;
+  position: relative;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.valo-match:hover{
+  transform: scale(1.05);
+}
+
+.valo-created-title{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f94555;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.valo-created-result{
+  grid-column: span 2;
+  text-align: center;
+}
+
+.blue-team{
+  color: blue;
+}
+
+.red-team{
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .valo-created-div{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 1rem;
@@ -129,4 +194,4 @@ body {
 .valo-created-result {
   grid-column: 1 / -1; /* Span across all columns */
   text-align: center;
-}
+} */
