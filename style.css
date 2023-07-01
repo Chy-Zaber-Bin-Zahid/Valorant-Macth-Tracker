@@ -15,6 +15,7 @@ body {
 .valo-main {
   max-width: 150rem;
   margin: 0 auto;
+  height: 100%;
 }
 
 .valo-back {
@@ -54,6 +55,16 @@ body {
   gap: 1rem;
 }
 
+.valo-error{
+  display: none;
+  border: 2px solid red;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
 .valo-input {
   padding: 1rem;
   font-size: 1.6rem;
@@ -73,4 +84,49 @@ body {
   color: #f94555;
   background-color: #fff;
   border: 2px solid #f94555;
+}
+
+.valo-show{
+  height: calc(100% - 137.5px);
+  overflow: auto;
+  font-size: 2rem;
+  /* scrollbar-width: none; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: .5rem 2rem 1rem 2rem;
+  align-items: start;
+}
+
+/* For WebKit-based browsers */
+/* .valo-show::-webkit-scrollbar {
+  display: none;
+} */
+
+.valo-created-div{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5rem 1rem 1rem 1rem;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.valo-created-title{
+  background-color: #f94555;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  padding: 1rem;
+}
+
+.valo-created-result {
+  grid-column: 1 / -1; /* Span across all columns */
+  text-align: center;
 }
