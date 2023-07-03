@@ -25,7 +25,13 @@ function match(id) {
     .then((data) => {
       const resultsContainer = document.querySelector(".valo-show");
 
-      for (let i = 0; i < 9; i++) {
+      let loopLimit = 9; // default loop limit
+
+      if (window.innerWidth <= 950) {
+        loopLimit = 10; 
+      }
+
+      for (let i = 0; i < loopLimit; i++) {
         // newly created div
         const createdDiv = document.createElement("div");
         createdDiv.classList.add("valo-match");
@@ -200,3 +206,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Send the request
   xhr.send();
 });
+

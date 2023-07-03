@@ -1,0 +1,55 @@
+@media (max-width: 1186px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  .valo-show{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 635px) {
+  html,
+  body {
+    font-size: 38%;
+  }
+}
+
+@media (max-width: 500px) {
+  .valo-show{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .valo-match{
+    justify-self: center;
+    width: 50rem;
+  }
+}
+
+@media (max-width: 420px) {
+  html,
+  body {
+    font-size: 35%;
+  }
+
+  .valo-match{
+    justify-self: center;
+    width: 45rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .valo-title-d {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 300px) {
+  html,
+  body {
+    font-size: 30%;
+  }
+}
